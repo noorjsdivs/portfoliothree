@@ -12,6 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-image": "url('/assets/bg.jpg')",
+        "contact-image": "url('/assets/contact.jpg')",
       },
       colors: {
         designColor: "#F7D449",
