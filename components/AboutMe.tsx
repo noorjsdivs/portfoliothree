@@ -1,4 +1,4 @@
-import {HiChevronDoubleRight} from "react-icons/hi"
+import { HiChevronDoubleRight } from "react-icons/hi";
 import AboutList from "./AboutList";
 
 const AboutMe = () => {
@@ -8,9 +8,13 @@ const AboutMe = () => {
         <h1 className="text-3xl uppercase font-semibold text-center">
           A Story about me.
         </h1>
-        <p className="text-3xl font-medium leading-relaxed">
-          I'm <span className="font-bold tracking-wider">Sarah Jonson</span> and
-          I'm a freelance <span className="font-bold">Web Designer</span>.Lorem
+        <p className="text-3xl font-medium leading-relaxed text-textColor">
+          I'm{" "}
+          <span className="font-bold tracking-wider text-white">
+            Sarah Jonson
+          </span>{" "}
+          and I'm a freelance{" "}
+          <span className="font-bold text-white">Web Designer</span>. Lorem
           Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
@@ -30,6 +34,6 @@ const AboutMe = () => {
       </div>
     </div>
   );
-}
+};
 
-export default AboutMe
+export default AboutMe;
