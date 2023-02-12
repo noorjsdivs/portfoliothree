@@ -16,7 +16,7 @@ const Works = () => {
           />
           <div className="absolute w-full h-[480px] left-0 top-0 ">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 transform translate-x-1/2">
+              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Web design
               </h1>
             </div>
@@ -30,7 +30,7 @@ const Works = () => {
           />
           <div className="absolute w-full h-[480px] left-0 top-0 ">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 transform translate-x-1/2">
+              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Development
               </h1>
             </div>
@@ -42,9 +42,9 @@ const Works = () => {
             src={bgFour}
             alt="bgFour"
           />
-          <div className="absolute w-full h-[400px] left-0 top-0 ">
+          <div className="absolute w-full h-[480px] left-0 top-0 ">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 transform translate-x-1/2">
+              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 UI Design
               </h1>
             </div>
@@ -54,12 +54,12 @@ const Works = () => {
           <Image
             className="w-full h-full object-cover scale-125 group-hover:scale-100 duration-500"
             src={bgThree}
-            alt="bgOne"
+            alt="bgThree"
           />
-          <div className="absolute w-full h-[400px] left-0 top-0 ">
+          <div className="absolute w-full h-[480px] left-0 top-0 ">
             <div className="w-full h-full relative bg-black bg-opacity-70 hidden group-hover:inline-block transition-opacity duration-500">
-              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 transform translate-x-1/2">
-                UI Design
+              <h1 className="text-2xl text-center font-bold bg-designColor px-6 py-2 w-60 absolute bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                Interior Design
               </h1>
             </div>
           </div>
