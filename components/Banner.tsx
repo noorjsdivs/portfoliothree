@@ -32,7 +32,6 @@ const Banner = () => {
   // ============ Nav style End here ===============
 
   const [menu, setMenu] = useState(false);
-  console.log(menu);
   return (
     <div id="home" className="w-full h-[700px] relative">
       <Design />
