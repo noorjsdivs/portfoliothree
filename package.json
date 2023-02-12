@@ -6,10 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^9.0.2",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "react-tsparticles": "^2.8.0",
     "slick-carousel": "^1.8.1",
@@ -19,6 +21,7 @@
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/react-scroll": "^1.8.6",
     "@types/react-slick": "^0.23.10",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",

@@ -2,24 +2,24 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import BannerImg from "../public/assets/bg.jpg"
+import BannerImg from "../public/assets/bg.jpg";
 
 const Design = () => {
-     const particlesInit = useCallback(async (engine: Engine) => {
-       console.log(engine);
+  const particlesInit = useCallback(async (engine: Engine) => {
+    // console.log(engine);
 
-       // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-       // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-       // starting from v2 you can add only the features you need reducing the bundle size
-       await loadFull(engine);
-     }, []);
+    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  }, []);
 
-     const particlesLoaded = useCallback(
-       async (container: Container | undefined) => {
-         await console.log(container);
-       },
-       []
-     );
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      // await console.log(container);
+    },
+    []
+  );
   return (
     <div className="w-full h-full bg-hero-image bg-cover relative">
       <Particles
@@ -58,7 +58,7 @@ const Design = () => {
             },
             links: {
               color: "#ffffff",
-              distance: 180,
+              distance: 120,
               enable: true,
               opacity: 0.5,
               width: 1,
@@ -79,9 +79,9 @@ const Design = () => {
             number: {
               density: {
                 enable: true,
-                area: 1500,
+                area: 1000,
               },
-              value: 70,
+              value: 90,
             },
             opacity: {
               value: 0.5,
@@ -90,7 +90,7 @@ const Design = () => {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 10 },
+              value: { min: 1, max: 6 },
             },
           },
           detectRetina: true,

@@ -1,9 +1,8 @@
-import { HiChevronDoubleRight } from "react-icons/hi";
 import AboutList from "./AboutList";
 
 const AboutMe = () => {
   return (
-    <div className="w-full h-full bg-black text-white py-28">
+    <section id="about" className="w-full h-full bg-black text-white py-28">
       <div className="max-w-6xl mx-auto flex flex-col gap-16">
         <h1 className="text-3xl uppercase font-semibold text-center">
           A Story about me.
@@ -32,7 +31,7 @@ const AboutMe = () => {
           <AboutList title="Wordpress Website" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

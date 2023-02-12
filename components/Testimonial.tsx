@@ -58,7 +58,10 @@ const Testimonial = () => {
     ),
   };
   return (
-    <div className="text-white bg-[#0F1113] py-20 flex justify-center items-center">
+    <section
+      id="testimonial"
+      className="text-white bg-[#0F1113] py-20 flex justify-center items-center"
+    >
       <div className="w-[620px] h-60">
         <div>
           <Slider {...settings}>
@@ -98,7 +101,7 @@ const Testimonial = () => {
           </Slider>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

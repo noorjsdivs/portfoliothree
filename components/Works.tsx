@@ -3,7 +3,7 @@ import { bgOne, bgTwo, bgThree, bgFour } from "../public/assets/index";
 
 const Works = () => {
   return (
-    <div className="w-full h-full bg-black text-white py-28">
+    <section id="portfolio" className="w-full h-full bg-black text-white py-28">
       <h1 className="text-3xl uppercase tracking-[10px] font-semibold text-center">
         Featured Works.
       </h1>
@@ -65,7 +65,7 @@ const Works = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
