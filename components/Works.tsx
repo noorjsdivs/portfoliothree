@@ -7,8 +7,8 @@ const Works = () => {
       <h1 className="text-3xl uppercase tracking-[10px] font-semibold text-center">
         Featured Works.
       </h1>
-      <div className="w-full flex h-[480px] mt-16 px-6">
-        <div className="w-1/4 h-full relative overflow-hidden group">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 h-[1000px] md:h-[480px] mt-16 px-6">
+        <div className="w-full h-full relative overflow-hidden group">
           <Image
             className="w-full h-full object-cover scale-125 group-hover:scale-100 duration-500"
             src={bgOne}
@@ -22,7 +22,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/4 h-full relative overflow-hidden group">
+        <div className="w-full h-full relative overflow-hidden group">
           <Image
             className="w-full h-full object-cover scale-125 group-hover:scale-100 duration-500"
             src={bgTwo}
@@ -36,7 +36,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/4 h-full relative overflow-hidden group">
+        <div className="w-full h-full relative overflow-hidden group">
           <Image
             className="w-full h-full object-cover scale-125 group-hover:scale-100 duration-500"
             src={bgFour}
@@ -50,7 +50,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/4 h-full relative overflow-hidden group">
+        <div className="w-full h-full relative overflow-hidden group">
           <Image
             className="w-full h-full object-cover scale-125 group-hover:scale-100 duration-500"
             src={bgThree}

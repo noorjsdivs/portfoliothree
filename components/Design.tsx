@@ -73,7 +73,7 @@ const Design = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 4,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -90,7 +90,7 @@ const Design = () => {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 6 },
+              value: { min: 1, max: 5 },
             },
           },
           detectRetina: true,

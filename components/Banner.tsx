@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import Design from "./Design";
@@ -14,13 +14,37 @@ const Banner = () => {
     }
   }
 
+  // ============ Nav style Start here =============
+  const [navSize, setnavSize] = useState("90px");
+  const [navColor, setnavColor] = useState("transparent");
+
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setnavColor("#000000") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavSize("90px") : setnavSize("90px");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, [navColor]);
+
+  // ============ Nav style End here ===============
+
   const [menu, setMenu] = useState(false);
   console.log(menu);
   return (
     <div id="home" className="w-full h-[700px] relative">
       <Design />
       <div className="absolute left-0 top-0 w-full h-[700px] bg-black bg-opacity-10">
-        <div className="w-full p-16 flex justify-between fixed top-0 z-50">
+        <nav
+          style={{
+            backgroundColor: navColor,
+            height: navSize,
+            transition: "all 1s",
+          }}
+          className="w-full px-16 py-6 flex justify-between fixed top-0 z-40 bg-black bg-opacity-25"
+        >
           <h1 className="font-bodyFont text-4xl text-white font-extrabold border-2 w-12 text-center">
             S
           </h1>
@@ -32,10 +56,12 @@ const Banner = () => {
             <span className="w-full h-[3px] bg-designColor inline-flex"></span>
             <span className="w-full h-[3px] bg-designColor inline-flex group-hover:w-4 duration-300"></span>
           </div>
-        </div>
-        <div className="w-full h-full flex flex-col justify-center items-center text-white">
-          <h1 className="text-[100px] font-black">I'm Sarah Jonson</h1>
-          <div className="flex items-center gap-6 text-xl font-bold bg-designColor px-6 py-3">
+        </nav>
+        <div className="w-full h-full flex flex-col justify-center items-center text-white px-4">
+          <h1 className="text-[50px] md:text-[80px] lg:text-[100px] font-black">
+            I'm Sarah Jonson
+          </h1>
+          <div className="flex items-center gap-2 md:gap-6 text-base md:text-xl font-bold bg-designColor px-6 py-3">
             <h2 className="tracking-[4px]">LEADER</h2>
             <HiMinus className="text-2xl rotate-90" />
             <h2 className="tracking-[4px]">DESIGNER</h2>
@@ -44,17 +70,18 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      {/* =========== Menu Icon status Start here ========= */}
       {menu && (
         <div
           ref={(node) => (ref.current = node)}
           onClick={handleClick}
-          className="w-full h-screen bg-black bg-opacity-40 fixed top-0 right-0 flex justify-end z-30"
+          className="w-full h-screen bg-black bg-opacity-40 fixed top-0 right-0 flex justify-end z-50"
         >
           <motion.div
             initial={{ x: 500, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-[40%] h-full bg-[#0F1113] text-white flex items-center justify-center"
+            className="w-full md:w-[60%] lg:w-[40%] h-full bg-[#0F1113] text-white flex items-center justify-center"
           >
             <div className="w-4/5 px-12">
               <div>
@@ -142,6 +169,7 @@ const Banner = () => {
           </motion.div>
         </div>
       )}
+      {/* =========== Menu Icon status End here =========== */}
     </div>
   );
 };
